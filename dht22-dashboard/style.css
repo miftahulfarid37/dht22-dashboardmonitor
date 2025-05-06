@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* untuk mengatur lapisan background */
+  }
+  
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://images.bisnis.com/posts/2020/11/13/1317140/18116-ptb-bisnis01semen21.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.4; /* atur opacity gambar background di sini */
+    z-index: -1; /* pastikan gambar di belakang konten */
+  }
+  
+  .dashboard-container {
+    background: rgba(255, 255, 255, 1); /* transparan putih untuk kontainer */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .sensor-card {
+    background: #e0e7ff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+  }
+  
+  .sensor-card p {
+    font-size: 1.5rem;
+  }
+
+  .logo-kiri {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px; /* sesuaikan ukuran */
+    height: auto;
+    z-index: 10;
+  }
+  
+  .logo-kanan {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+    z-index: 10;
+  }
+  
+  
